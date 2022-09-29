@@ -18,10 +18,21 @@
     <!-- Linki do stron zewnętrznych i katalogów -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="calendar.css">
+
+    <!-- font-family: 'Courgette', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Nabla', cursive; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
-    <script src="calendar.js"></script>
+
+    <!-- font-family: 'Alkalami', serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
@@ -41,11 +52,16 @@
             <main class="main-content">
                 <section class="panel">
                     <section class="weather">
-                        
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-cloud-bolt"></i>
+                        <i class="fa-solid fa-snowflake"></i>
+                        <i class="fa-solid fa-cloud-rain"></i>
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-cloud"></i>
                     </section>
                     <header class="greate">
-                        <h2>Witaj (imię) !</h2>
-                        <p>cytat dnia</p>
+                        <h2 class="hello">Dzień dobry, Dobry wieczór (imię) !</h2>
+                        <p class="cytaty">cytat dnia</p>
                     </header>
                     <section class="log-out">
                         <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
@@ -61,42 +77,71 @@
                             
                         </section>
                     </a>
-                    <section class="checklist opcja">
-                        <a href="#"></a>
-                    </section>
-                    <section class="opcja3 opcja">
-                        <a href="#"></a>
-                    </section>
 
-                    <section class="kalendarz">
-                        
+                    <a href="#">
+                        <section class="checklist opcja">
+
+                        </section>
+                    </a>
+
+                    <a href="#">
+                        <section class="opcja3 opcja">
+
+                        </section>
+                    </a>
+
+                    <section class="calendar">
+                        <div class="calendar-header">
+                            <span class="month-picker" id="month-picker"></span>
+                            <div class="year-picker">
+                                <span class="year-change" id="prev-year">
+                                    <i class="fas fa-angle-left prev"></i>
+                                </span>
+                                <span id="year"></span>
+                                <span class="year-change" id="next-year">
+                                    <i class="fas fa-angle-right next"></i>
+                                </span>
+                            </div> 
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-week-day">
+                                <div>Pon</div>
+                                <div>Wt</div>
+                                <div>Śr</div>
+                                <div>Czw</div>
+                                <div>Pią</div>
+                                <div>Sob</div>
+                                <div>Nied</div>
+                            </div>
+                            <div class="calendar-days"></div>
+                        </div>
+                        <div class="month-list"></div>
+                        <script src="calendar.js"></script>
                     </section>
 
                     <section class="opcja5 opcja">
                         <a href="#"></a>
                     </section>
+
                     <section class="opcja6 opcja">
                         <a href="#"></a>
                     </section>
+
                     <section class="opcja7 opcja">
                         <a href="#"></a>
                     </section>
                 </section>
             </main>
         </section>
-
-<!-- Site footer --> 
-
+<!-- Site footer -->
         <footer>
-            
-            <section class="copywrite">
-                <p>
-                AlphaMind &copy; 2022 
-                <a href="#">Terms&amp; Conditions</a>
-                <a href="#">Privacy Policy</a>
-                </p>
-            </section>
+            <div class="div1"></div>
+            <div class="div1"></div>
+            <div class="div1"></div>
+            <div class="div1"></div>
+            <div class="div1"></div>
         </footer>
+<!-- skrypty kalendarza w JavaScript -->
     </div>
 </body>
 </html>
