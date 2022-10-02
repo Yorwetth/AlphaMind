@@ -29,12 +29,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
 
-    <!-- font-family: 'Alkalami', serif; -->
+    <!-- font-family: 'Lobster', cursive; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
 </head>
 <body>
     <div class="background">
@@ -60,8 +61,8 @@
                         <i class="fa-solid fa-cloud"></i>
                     </section>
                     <header class="greate">
-                        <h2 class="hello">Dzień dobry, Dobry wieczór (imię) !</h2>
-                        <p class="cytaty">"cytat dnia"</p>
+                        <h2 class="hello">Dzień dobry!</h2>
+                        <p class="cytaty">"Każda praca jest możliwa do wykonania jeśli podzielić ją na małe odcinki" - Abraham Lincol</p>
                     </header>
                     <section class="log-out">
                         <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
@@ -74,19 +75,19 @@
                 <section class="site-nav">
                     <a href="#">
                         <section class="notepad opcja">
-                            
+                            <i class="fa-regular fa-note-sticky"></i>
                         </section>
                     </a>
 
                     <a href="#">
                         <section class="checklist opcja">
-
+                            <i class="fa-solid fa-list-check"></i>
                         </section>
                     </a>
 
                     <a href="#">
                         <section class="opcja3 opcja">
-
+                            <i class="fa-regular fa-calendar-days"></i>
                         </section>
                     </a>
 
@@ -119,17 +120,34 @@
                         <script src="calendar.js"></script>
                     </section>
 
-                    <section class="opcja5 opcja">
-                        <a href="#"></a>
-                    </section>
+                    <a href="#">
+                        <section class="album opcja">
+                            <i class="fa-solid fa-images"></i>
+                        </section>
+                    </a>
 
-                    <section class="opcja6 opcja">
-                        <a href="#"></a>
-                    </section>
+                    <a href="#">
+                        <section class="opcja6 opcja">
+                            <i class="fa-solid fa-address-book"></i>
+                        </section>
+                    </a>
 
-                    <section class="opcja7 opcja">
-                        <a href="#"></a>
-                    </section>
+                    <a href="#">
+                        <section class="opcja7 opcja">
+                            <i class="fa-solid fa-gear"></i>
+                        </section>
+                    </a>
+
+                    <script type="text/javascript" src="vanilla-tilt.js"></script>
+                    <script>
+                        VanillaTilt.init(document.querySelectorAll(".opcja"), {
+                        max: 25,
+                        speed: 400,
+                        glare:true,
+                        "max-glare":0.5,
+                        });
+                    </script>
+
                 </section>
             </main>
         </section>

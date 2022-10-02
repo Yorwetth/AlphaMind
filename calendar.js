@@ -45,13 +45,13 @@ generateCalendar = (month, year) => {
 
 let month_list = calendar.querySelector('.month-list')
 
-month_names.forEach((e, index) => {
+month_names.forEach((e, Index) => {
     let month = document.createElement('div')
-    month.innerHTML = `<div data-month="${index}">${e}</div>`
+    month.innerHTML = `<div data-month="${Index}">${e}</div>`
     month.querySelector('div').onclick = () => {
         month_list.classList.remove('show')
-        curr_month.value = index
-        generateCalendar(index, curr_year.value)
+        curr_month.value = Index
+        generateCalendar(Index, curr_year.value)
     }
     month_list.appendChild(month)
 })
