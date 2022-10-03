@@ -18,6 +18,7 @@
     <!-- Linki do stron zewnętrznych i katalogów -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="weather.css">
 
     <!-- font-family: 'Courgette', cursive; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,13 +54,23 @@
             <main class="main-content">
                 <section class="panel">
                     <section class="weather">
-                        <i class="fa-solid fa-sun"></i>
-                        <i class="fa-solid fa-cloud-bolt"></i>
-                        <i class="fa-solid fa-snowflake"></i>
-                        <i class="fa-solid fa-cloud-rain"></i>
-                        <i class="fa-solid fa-moon"></i>
-                        <i class="fa-solid fa-cloud"></i>
+                        <div class="notification">
+                        </div>
+                        <div class="weather-container">
+                            <div class="weather-icon">
+                                <img src="ikony/unknown.svg" alt="">
+                            </div>
+                            <div class="temperature-value">
+                                <p>- °<span>C</span></p>
+                            </div>
+                            
+                            <div class="location">
+                                <p>-</p>
+                            </div>
+                        </div>
                     </section>
+                    <script src="weather.js"></script>
+
                     <header class="greate">
                         <h2 class="hello">Dzień dobry!</h2>
                         <p class="cytaty">"Każda praca jest możliwa do wykonania jeśli podzielić ją na małe odcinki" - Abraham Lincol</p>
