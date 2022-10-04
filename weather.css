@@ -1,5 +1,5 @@
 .weather-container{
-    
+    margin-top:-5px;
 }
 .weather-icon img{
     width: 65px;
@@ -17,29 +17,19 @@
     text-align: center;
     padding: 10px 0;
 }
-.location p{
-    font-size:25px;
-}
-.temperature-value p{
-    font-size:16px;
-}
 
 .temperature-value p{
     color: white;
+    font-size: 16px;
 }
 
-.temperature-value span{
-    color: white;
-    font-size: 0.5em;
-}
 
 .location p{
     margin: 0;
     padding: 0;
     color: white;
     text-align: center;
-    font-size: 0.8em;
-    font-size:20px;
+    font-size: 16px;
 }
 
 
