@@ -1,4 +1,10 @@
-
+.weather-container{
+    
+}
+.weather-icon img{
+    width: 65px;
+    height: 65px;
+}
 .notification{
     background-color: #f8d7da;
     display: none;
@@ -10,6 +16,12 @@
     margin: 0;
     text-align: center;
     padding: 10px 0;
+}
+.location p{
+    font-size:25px;
+}
+.temperature-value p{
+    font-size:16px;
 }
 
 .temperature-value p{
