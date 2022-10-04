@@ -1,3 +1,9 @@
+<<<<<<< HEAD:style/weather.css
+=======
+.weather-container{
+    margin-top:-5px;
+}
+>>>>>>> e0615808d825cbc8481d542ee89b25518f7068eb:weather.css
 .weather-icon img{
     width: 65px;
     height: 65px;
@@ -18,11 +24,24 @@
 
 .temperature-value p{
     color: white;
+<<<<<<< HEAD:style/weather.css
     font-size: 18px;
 }
+=======
+    font-size: 16px;
+}
+
+>>>>>>> e0615808d825cbc8481d542ee89b25518f7068eb:weather.css
 
 .location p{
     color: white;
     text-align: center;
+<<<<<<< HEAD:style/weather.css
     font-size: 18px;
 }
+=======
+    font-size: 16px;
+}
+
+
+>>>>>>> e0615808d825cbc8481d542ee89b25518f7068eb:weather.css

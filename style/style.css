@@ -54,7 +54,11 @@ body{
 .panel{
     display: grid;
     grid-template-columns: [weather] 20% [greate] auto [log-out]20%;
+<<<<<<< HEAD:style/style.css
     margin:15px 10px 20px 10px;
+=======
+    margin:10px;
+>>>>>>> e0615808d825cbc8481d542ee89b25518f7068eb:style.css
 }
 .hello{
     font-size: 43px;
