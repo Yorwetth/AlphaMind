@@ -16,9 +16,9 @@
     <!-- Indeksowanie dla robota google -->
     <meta name="robots" content="index, follow"/>
     <!-- Linki do stron zewnętrznych i katalogów -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="calendar.css">
-    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/calendar.css">
+    <link rel="stylesheet" href="style/weather.css">
 
     <!-- font-family: 'Courgette', cursive; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,8 +54,6 @@
             <main class="main-content">
                 <section class="panel">
                     <section class="weather">
-                        <div class="notification">
-                        </div>
                         <div class="weather-container">
                             <div class="weather-icon">
                                 <img src="ikony/unknown.svg" alt="">
@@ -65,11 +63,13 @@
                             </div>
                             
                             <div class="location">
-                                <p>-</p>
+                                <p></p>
+                            </div>
+                            <div class="notification">
                             </div>
                         </div>
                     </section>
-                    <script src="weather.js"></script>
+                    <script src="script/weather.js"></script>
 
                     <header class="greate">
                         <h2 class="hello">Dzień dobry!</h2>
@@ -128,7 +128,7 @@
                             <div class="calendar-days"></div>
                         </div>
                         <div class="month-list"></div>
-                        <script src="calendar.js"></script>
+                        <script src="script/calendar.js"></script>
                     </section>
 
                     <a href="#">
@@ -162,7 +162,9 @@
                 </section>
             </main>
         </section>
+
 <!-- Site footer -->
+
         <footer>
             <div class="div1"></div>
             <div class="div1"></div>
@@ -170,7 +172,6 @@
             <div class="div1"></div>
             <div class="div1"></div>
         </footer>
-<!-- skrypty kalendarza w JavaScript -->
     </div>
 </body>
 </html>

@@ -21,7 +21,12 @@ if('geolocation' in navigator){
     navigator.geolocation.getCurrentPosition(setPosition, showError);
 }else{
     notificationElement.style.display = "block";
-    notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
+    notificationElement.innerHTML = "<p>Przeglądarka nie wspiera geolokalizacji</p>";
+}
+// SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
+function showError(error){
+    notificationElement.style.display = "block";
+    notificationElement.innerHTML = `<p>Włącz geolokalizację</p>`;
 }
 
 // SET USER'S POSITION
@@ -31,13 +36,6 @@ function setPosition(position){
     
     getWeather(latitude, longitude);
 }
-
-// SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
-function showError(error){
-    notificationElement.style.display = "block";
-    notificationElement.innerHTML = `<p>Włącz geolokalizację</p>`;
-}
-
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
     let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;

@@ -1,0 +1,28 @@
+.weather-icon img{
+    width: 65px;
+    height: 65px;
+}
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+.notification{
+    background:none;
+}
+.notification p{
+    color: white;
+    font-size:18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.temperature-value p{
+    color: white;
+    font-size: 18px;
+}
+
+.location p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
