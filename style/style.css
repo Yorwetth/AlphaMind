@@ -64,6 +64,7 @@ body{
 }
 .cytaty{
     font-family: 'Courgette', cursive;
+    font-size: 18px;
 }
 .weather{
     display: flex;

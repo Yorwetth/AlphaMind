@@ -1,3 +1,5 @@
+const cytatElement = document.querySelector(".cytaty");
+
 let baza = ["Każda praca jest możliwa do wykonania jeśli podzielić ją na małe odcinki - Abraham Lincol",
 "Małe szanse są często początkiem wielkich przedsięwzięć. - Demostenes",
 "Żadne zadanie nie jest szczególnie trudne, jeśli podzielisz je na mniejsze podzadania. - Henry Ford",
