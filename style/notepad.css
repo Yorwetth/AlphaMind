@@ -16,24 +16,15 @@ body{
     width:100vw;
     height: 100vh;
     display:grid;
-    grid-template-rows: [site-header] 13% [content]auto [footer] 12%;
+    grid-template-rows: [site-header] 8% [content]auto [footer] 12%;
 }
-
 /* logo */
 .site-title{
     padding-top:20px;
-    font-size: 60px;
+    font-size: 42px;
     font-family: 'Nabla', cursive;
     text-shadow: 5px 5px 5px rgba(66, 68, 90, 1);
 }
-.logo-subtext{
-    color: white;
-    padding-left:220px;
-    margin-top:-20px;
-    font-family: 'Courier New';
-    text-shadow: 5px 5px 5px rgba(34, 35, 47, 1);
-}
-
 /* content */
 .content{
     display: grid;
@@ -41,20 +32,20 @@ body{
 }
 .main-content{
     width:70%;
-    height: 87%;
+    height: 90%;
     background: linear-gradient(to left top,  rgba(0,0,0,0.55), rgba(0,0,0,0.25));
     border-radius:20px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     display: grid;
-    grid-template-rows: [panel] 20% [separation]1px [nav] auto;
+    grid-template-rows: [panel] 10% [separation]1px [nav] auto;
 }
 /* panel górny */
 .panel{
     display: grid;
     grid-template-columns: [weather] 20% [greate] auto [log-out]20%;
-    margin:10px 10px 20px 10px;
+    margin:15px 10px 20px 10px;
     margin:10px;
 }
 .hello{
@@ -62,30 +53,21 @@ body{
     padding-bottom: 5px;
     font-family: 'Lobster', cursive;
 }
-.cytaty{
-    font-family: 'Courgette', cursive;
-    font-size: 19px;
-}
+
 .weather{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:-5px;
+    margin-top:-8px;
+}
+.weather-icon img{
+    width: 62px;
+    height: 62px;
 }
 .log-out{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    height: 25px;
 }
-.log-out a{
-    color: black;
-    font-size: 26px;
-}
-.log-out a:hover{
-    color:white;
-    background: none;
-}
+
 .separation{
     width:90%;
     margin-left:auto;
@@ -156,29 +138,3 @@ footer{
 .div4 { grid-area: 1 / 5 / 2 / 6; }
 .div5 { grid-area: 2 / 3 / 3 / 6; }
 
-.weather-icon img{
-    width: 62px;
-    height: 62px;
-}
-.notification{
-    background-color: #f8d7da;
-    display: none;
-}
-.notification{
-    background:none;
-}
-.notification p{
-    color: white;
-    font-size:18px;
-    text-align: center;
-    font-weight: 600;
-}
-.temperature-value p{
-    color: white;
-    font-size: 18px;
-}
-.location p{
-    color: white;
-    text-align: center;
-    font-size: 18px;
-}
