@@ -70,7 +70,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:-5px;
 }
 .log-out{
     display: flex;
@@ -168,17 +167,19 @@ footer{
     background:none;
 }
 .notification p{
-    color: white;
+    color: black;
     font-size:18px;
     text-align: center;
     font-weight: 600;
 }
 .temperature-value p{
-    color: white;
+    color: black;
     font-size: 18px;
+    font-weight: 600;
 }
 .location p{
-    color: white;
+    color: black;
     text-align: center;
     font-size: 18px;
+    font-weight: 600;
 }
