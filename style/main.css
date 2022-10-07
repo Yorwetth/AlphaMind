@@ -86,6 +86,7 @@ body{
     background: none;
 }
 .separation{
+    display: grid;
     width:90%;
     margin-left:auto;
     margin-right: auto;
@@ -156,8 +157,8 @@ footer{
 .div5 { grid-area: 2 / 3 / 3 / 6; }
 
 .weather-icon img{
-    width: 62px;
-    height: 62px;
+    width: 40px;
+    height: 40px;
 }
 .notification{
     background-color: #f8d7da;
@@ -182,4 +183,8 @@ footer{
     text-align: center;
     font-size: 18px;
     font-weight: 600;
+}
+.wearther-container{
+    justify-content: center;
+    align-items: center;
 }

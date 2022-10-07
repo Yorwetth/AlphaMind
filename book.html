@@ -16,7 +16,7 @@
     <!-- Indeksowanie dla robota google -->
     <meta name="robots" content="index, follow"/>
     <!-- Linki do stron zewnętrznych i katalogów -->
-    <link rel="stylesheet" href="style/notepad.css">
+    <link rel="stylesheet" href="style/book.css">
 
     <!-- font-family: 'Courgette', cursive; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,30 +51,30 @@
             <main class="main-content">
                 <section class="panel">
                     <header class="greate">
-                        <h2 class="hello">Notatnik</h2>
+                        <h2 class="hello">Address book</h2>
                     </header>
                 </section>
                 <hr class="separation">
 
 <!-- Site content nav --> 
 
-                <section class="notes" id="app">
-                    <div class="notes__sidebar">
-                        <button class="notes__add" type="button">Add Note</button>
-                        <div class="notes__list">
-                            <div class="notes__list-item notes__list-item--selected">
-                                <div class="notes__small-title">Lecture Notes</div>
-                                <div class="notes__small-body">I learnt nothing today.</div>
-                                <div class="notes__small-updated">Thursday 3:30pm</div>
-                            </div>
-                        </div>
+            <section class="book" id="contact-list">
+                <div id="contact-form">
+                    <input
+                        type="text"
+                        autocomplete="off"
+                        placeholder="Imię i nazwisko"
+                        id="name"/>
+                    <input
+                        type="text"
+                        autocomplete="off"
+                        placeholder="Numer telefonu"
+                        id="phone-number"/>
+                    <button id="add-contact">+</button>
                     </div>
-                    <div class="notes__preview">
-                        <input class="notes__title" type="text" placeholder="Enter a title...">
-                        <textarea class="notes__body">I am the notes body...</textarea>
-                    </div>
+                    <div id="contacts"></div>
+                    <script src="script/todo.js"></script>
                 </section>
-                <script src="script/main.js" type="module"></script>
             </main>
         </section>
 
