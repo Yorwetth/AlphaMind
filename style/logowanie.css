@@ -46,7 +46,7 @@ a{
     -webkit-backdrop-filter: blur(5px);
     display: grid;
     overflow:hidden;
-    grid-template-rows: [panel] 12% [separation]1px [notes] auto;
+    grid-template-rows: [panel] 12% [separation]1px [log-in] auto;
 }
 /* panel górny */
 .panel{
@@ -86,99 +86,111 @@ footer{
 .div4 { grid-area: 1 / 5 / 2 / 6; }
 .div5 { grid-area: 2 / 3 / 3 / 6; }
 
-.notes {
-    display: flex;
-    padding: 15px;
-    overflow:hidden;
-    font-family: sans-serif;
-}
-
-.notes__sidebar {
-    border-right: 2px solid black;
-    padding: 10px 25px 20px 15px;
-    flex-shrink: 0;
-    width:300px;
-}
-
-.notes__add {
-    background: #079b8d;
-    border-radius: 15px;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
-    padding:15px;
+#form_container {
     width: 100%;
-    margin-bottom: 15px;
-    border:none;
-    transition:0.2s;
+    height: 100%;
+
+    background-color: #370617;
+    box-shadow: 0 0 50px -20px #000;
+    border-radius: 2%;
+
+    overflow: hidden;
 }
 
-.notes__add:hover {
-    background: #08ac9e;
-}
-.notes__list-item--selected {
-    background: rgba(0,0,0,0.4);
-    border-radius: 15px;
-    font-weight: bold;
-}
-.notes__list-item {
-    cursor: pointer;
-    height: 120px;
-    margin:5px 0;
-}
-.notes__small-title{
-    padding:5px;
-    height:40px;
-    font-size: 26px;
-    overflow: hidden;
-    text-align: center;
-}
-.notes__small-body {
-    padding:5px 10px;
-    font-size: 18px;
-    height:50px;
-    overflow: hidden;
-    text-align: left;
-}
-.notes__small-updated {
-    padding:5px 10px;
-    height:30px;
-    overflow: hidden;
-    color: rgb(175, 169, 169);
-    font-style: italic;
-    text-align: right;
-    font-size: 13px;
-}
-.notes__preview {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    flex-grow: 1;
-}
-
-.notes__title,
-.notes__body {
-    border: none;
-    outline: none;
+#form_header_container {
     width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 20;
+    background: #000;
 }
 
-.notes__title {
-    font-size: 3em;
-    font-weight: bold;
-    background: rgba(0,0,0,0.2);
-    border-radius: 15px;
-    padding:10px;
+#form_header {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#form_content_container {
+    width: 100%;
+    height: 90%;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
 }
 
-.notes__body {
-    flex-grow: 1;
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-top: 2em;
-    resize: none;
-    background: rgba(0,0,0,0.2);
-    border-radius: 15px;
-    padding:15px;
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+
+    float: left;
+
+}
+
+input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 1;
+}
+
+#button_container {
+    width: 100%;
+    height: 10%;
+
+    background-image: linear-gradient(80deg, #FFBE0B, #FB5607 50%, #FF006E 50%, #8338EC);
+    color: #fff;
+
+    float: left;
+
+    margin-top: 5px;
+}
+
+#button_container button {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

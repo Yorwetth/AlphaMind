@@ -8,7 +8,7 @@ const renderContacts = () => {
       const newContact = `
           <div class="contact">
             <div class="contact-info">
-                <p>${contact.name} - ${contact.phoneNumber}<span class="contact-remove"><img src="icons/trash.png"/></span></p>
+                <p>${contact.name} nr: ${contact.phoneNumber}<span class="contact-remove"><img src="icons/trash.png"/></span></p>
             </div>
           </div>
       `;
