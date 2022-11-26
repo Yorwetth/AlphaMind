@@ -35,9 +35,29 @@ a{
     display: grid;
     place-items: center;
 }
+
 .main-content{
     width:70%;
-    height: 90%;
+    height: 87%;
+    background: linear-gradient(to left top,  rgba(0,0,0,0.55), rgba(0,0,0,0.25));
+    border-radius:20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: grid;
+    grid-template-rows: [panel] 20% [separation]1px [nav] 80%;
+}
+/* panel górny */
+.panel{
+    display: grid;
+    grid-template-columns: [weather] 20% [greate] 60% [log-out]20%;
+    margin:10px;
+}
+
+
+.main-content{
+    width:70vw;
+    height: 70vh;
     background: linear-gradient(to left top,  rgba(0,0,0,0.55), rgba(0,0,0,0.25));
     border-radius:20px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.7);

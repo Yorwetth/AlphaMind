@@ -1,5 +1,5 @@
 const todos = document.querySelectorAll(".todo");
-const all_status = document.querySelectorAll(".status");
+const all_status = document.querySelectorAll(".drop");
 let draggableTodo = null;
 
 todos.forEach((todo) => {
@@ -70,12 +70,16 @@ function createTodo() {
 
 /* create p  */
   const pref = document.createElement("p");
-
   pref.classList.add("todo_text");
 
   const input_val = document.getElementById("todo_input").value;
   const txt = document.createTextNode(input_val);
   pref.appendChild(txt);
+
+  /* create checkbox */
+  const expand = document.createElement("INPUT");
+  expand.setAttribute("type","checkbox");
+  expand.classList.add("expand-btn");
 
   /* create span */
   const span = document.createElement("span");
@@ -85,12 +89,14 @@ function createTodo() {
   span.appendChild(span_txt);
 
   todo_div.appendChild(pref);
+  todo_div.appendChild(expand);
   todo_div.appendChild(span);
 
+  const no_status = document.querySelector('#no_status .drop');
   no_status.appendChild(todo_div);
 
   span.addEventListener("click", () => {
-    span.parentElement.style.display = "none";
+    span.parentElement.remove();
   });
 
   todo_div.addEventListener("dragstart", dragStart);

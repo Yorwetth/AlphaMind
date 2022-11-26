@@ -37,8 +37,8 @@ a{
   place-items: center;
 }
 .main-content{
-  width:70%;
-  height: 90%;
+  width:70vw;
+  height: 70vh;
   background: linear-gradient(to left top,  rgba(0,0,0,0.55), rgba(0,0,0,0.25));
   border-radius:20px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
@@ -46,7 +46,7 @@ a{
   -webkit-backdrop-filter: blur(5px);
   display: grid;
   overflow:hidden;
-  grid-template-rows: [panel] 11%[todo-container] auto;
+  grid-template-rows: [panel] 11%[todo-container] 89%;
 }
 /* panel górny */
 .panel{
@@ -122,7 +122,7 @@ h2.header-txt{
 }
 .todo{
   display:grid;
-  grid-template-columns: [todo_text]90% [close] auto;
+  grid-template-columns: [todo_text]80% [expand-btn]15% [close]5%;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
@@ -137,6 +137,7 @@ h2.header-txt{
   -moz-border-radius:10px;
   -ms-border-radius:10px;
   -o-border-radius:10px;
+  overflow: hidden;
 }
 .todo:hover{
   cursor: pointer;
@@ -173,7 +174,7 @@ h2.header-txt{
 }
 .modal .header {
   display: grid;
-  grid-template-columns: [title] 90% [btn] auto;
+  grid-template-columns: [title] 90% [close-modal] 10%;
   padding:10px;
   border-bottom: 1px solid #ccc;
   background-color: rgba(0, 0, 0, 0.1);
@@ -220,4 +221,71 @@ h2.header-txt{
   padding: 10px;
   background: rgba(0,0,0,0.4);
   color: white;
+}
+
+::-webkit-scrollbar {
+  width:10px;
+}
+::-webkit-scrollbar-track {
+  background-color: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 100vw;
+  border:2px solid #033345;
+  -webkit-border-radius: 100vw;
+  -moz-border-radius: 100vw;
+  -ms-border-radius: 100vw;
+  -o-border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.todo_text{
+  --max-lines:3;
+  --line-height:1.4;
+  max-height: calc(var(--max-lines)*1em*var(--line-height));
+  line-height: var(--line-height);
+  overflow: hidden;
+}
+.expand-btn{
+  appearance: none;
+  border: 1px solid black;
+  color:white;
+  padding:5px;
+  cursor: pointer;
+}
+.expand-btn::before{
+  content: "Open";
+}
+.expand-btn:checked::before{
+  content: "...";
+}
+.todo_text:has(+ .expand-btn:checked){
+  max-height: none;
+}
+
+.drop.default {
+  width: 100%;
+  height: 60%;
+  overflow-y: auto;
+}
+.drop {
+  width: 100%;
+  height: 80%;
+  overflow-y: auto;
+}
+/* ewentualne stylowanie dla scrollbar-a dla kontenerów */
+.drop::-webkit-scrollbar-thumb {
+  background-color: #013f6f;
+}
+.drop::-webkit-scrollbar-track {
+  background-color: #046bb0;
+}
+.drop::-webkit-scrollbar-corner {
+  background-color: #013f6f;
+}
+.drop::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
 }

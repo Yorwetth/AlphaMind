@@ -16,21 +16,8 @@
     <!-- Indeksowanie dla robota google -->
     <meta name="robots" content="index, follow"/>
     <!-- Linki do stron zewnętrznych i katalogów -->
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/calendar.css">
-
-    <script src="script/weather.js" defer></script>
-    <script src="script/calendar.js" defer></script>
-    <script type="text/javascript" src="vanilla-tilt.js" defer></script>
-    <script>
-        VanillaTilt.init(document.querySelectorAll(".opcja"), {
-        max: 25,
-        speed: 400,
-        glare:true,
-        "max-glare":0.5,
-        });
-    </script>
-
 
     <!-- font-family: 'Courgette', cursive; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,6 +67,7 @@
                             <div class="notification">
                             </div>
                         </div>
+                        <script src="script/weather.js"></script>
                     </section>
 
                     <header class="greate">
@@ -139,6 +127,7 @@
                             <div class="calendar-days"></div>
                         </div>
                         <div class="month-list"></div>
+                        <script src="script/calendar.js"></script>
                     </section>
 
                     <a href="#">
@@ -158,19 +147,31 @@
                             <i class="fa-solid fa-gear"></i>
                         </section>
                     </a>
+
+                    <script type="text/javascript" src="vanilla-tilt.js"></script>
+                    <script>
+                        VanillaTilt.init(document.querySelectorAll(".opcja"), {
+                        max: 25,
+                        speed: 400,
+                        glare:true,
+                        "max-glare":0.5,
+                        });
+                    </script>
+
                 </section>
             </main>
         </section>
 
 <!-- Site footer -->
 
-        <footer>
-            <div class="div1"></div>
-            <div class="div1"></div>
-            <div class="div1"></div>
-            <div class="div1"></div>
-            <div class="div1"></div>
-        </footer>
+        <div class="parent">
+            <div class="div1"> </div>
+            <div class="div2"> </div>
+            <div class="div3"> </div>
+            <div class="div4"> </div>
+            <div class="div5"> </div>
+            <div class="div6"> </div>
+        </div>
     </div>
 </body>
 </html>

@@ -43,12 +43,11 @@
     grid-template-columns: repeat(7, 1fr);
     height: 50px;
     font-weight: 600;
-    font-size: 18px;
 }
 .calendar-week-day{
     display: grid;
     place-items: center;
-    font-size: 20px;
+    font-size: 22px;
 }
 .calendar-days {
     display: grid;
@@ -62,7 +61,7 @@
     margin-right: auto;
     width: 45px;
     height: 42px;
-    font-size: 19px;
+    font-size: 20px;
     color:rgb(1, 153, 140);
 }
 .calendar-days div.curr-date{
@@ -94,7 +93,7 @@
 }
 
 .month-list.show {
-    z-index:999;
+    z-index:2;
     transform: scale(1);
     visibility: visible;
     pointer-events: visible;
